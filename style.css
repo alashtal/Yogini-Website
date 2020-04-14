@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+  
+body {
+  font-family: Lato;
+  color: #777777;
+  
+}
+h2{
+  color: #555555 ;
+  font-family: Oswald;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+
+}
+#logo {
+float: left;
+font-size: 280%; /*  Percentages so it is adjust to every device  */
+margin-left: 30px;
+
+}
+
+#menu {
+  letter-spacing: 4px;
+  list-style: none;
+  font-size: 110%;
+}
+#menu li {
+  margin-right: 30px;
+   float: right;
+  
+}
+
+#menu a{
+  text-decoration: none;
+  color: inherit;
+}
+#menu, #logo {
+  line-height: 75px;
+}
+#menu a:hover {
+  border-bottom: 1px solid black;
+}
+
+.active {
+  border-bottom: 1px solid black;
+}
+
+#hero-image {
+  height: 600px;
+  width: 100%;
+  background: url(https://images.unsplash.com/photo-1500904156668-758cff89dcff?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80) no-repeat center center;
+
+  animation-name: hero-zoom;
+  animation-duration: 5s;
+  animation-fill-mode: forwards; //image will remian at the last result size
+
+}
+#hero-outer {
+ height: 600px;
+ width: 100%;
+ overflow:hidden; 
+ position: relative;
+}
+
+@keyframes hero-zoom {
+  from{
+    transform: scale(1);
+
+  }
+  to{
+    transform: scale(1.1);
+  }
+}
+#cover-text, #cover-text h2{
+  color: #ffffff;
+}
+#cover-text{
+  font-size: 100%;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-family: Oswald;
+  
+  width: 300px;
+  height: 200px; 
+  
+
+  padding-top: 40px;
+  padding-right: 10px; 
+
+  background-color: rgba(261, 109, 107, .7);
+
+  bottom: 30px;
+  right: 150px;
+  position: absolute;
+  
+}
+#about-us{
+  height: 600px
+  
+}
+#left-ethos{
+  
+  width: 33%;
+  padding-top: 30px;
+  float: left;
+
+}
+#right-ethos {
+  width: 33%;
+  padding-top: 30px;
+  float: right;
+}
+#center-ethos {
+  
+  margin: 0 auto;
+  width: 33%;
+  
+}
+
+hr {
+
+border: 1px solid #777777;
+margin: 5px 0;
+width: 100%;
+
+}
+
+.left-about {                     
+  float: right;
+  width: 50%;
+  line-height: 20px;
+  clear: both;
+  margin-bottom: 50px;
+}
+.right-about{
+  margin-bottom: 50px;
+  width: 50%;
+  float: left;
+  clear: both;
+  line-height: 20px;
+}
+
+.right-about h2 {
+  text-align: right;
+}
+.right-about p {
+  text-align: right;
+}
+#welcome {
+
+font-size: 280%;
+text-align: center;
+margin: 20px 0;
+}
+
+#circle-contain {
+  width: 300px;
+  height: 300px;
+  border-style: solid;
+  border-width: 1px;
+  padding: 30px;
+  border-radius: 50%;
+  margin: 0 auto;
+  border-color: #cccccc;
+
+}
+#circle-bg {
+  background: url(https://images.unsplash.com/photo-1545389336-cf090694435e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80) no-repeat center center;
+  height: 100%;
+  border-radius: 50%;
+
+}
+#times {
+  background: url(http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/dublin-city.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-position: center;
+  overflow: hidden;
+  
+}
+#times div {
+  padding: 30px 0 0 10px;
+  float: left;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 2px;
+  width: 19%;
+  text-align: center;
+  color: #fafafa;
+}
+#times h2 {
+  color: #fafafa;
+}
+footer {
+  height: 150px;
+  
+}
+.social-links {
+  text-align: center;
+}
+.social-links li {
+  display: inline;
+  
+}
+.social-links i {
+  font-size: 190%;
+  padding: 2%;
+  margin: 2%; 
+  color: #777777
+}
+#photo {
+  line-height: 0;
+  
+  column-count: 4;
+  column-gap: 0px;
+  clear: both;
+
+}
+#photo img{
+  width: 100%;
+}
+
+
+
+/* form */
+
+.form-section {
+    clear: left;
+    background: url("https://images.unsplash.com/photo-1573462239448-06b5cde9df64?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1318&q=80");
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+}
+
+.signup-form {
+  margin-top: 150px;
+  color: #fff;
+  background-color: rgba(60, 60, 60, 0.6);
+  max-width: 400px;
+  position: absolute;
+  left: 10% /**/;
+  padding: 30px;
+}
+.signup-form h2 {
+   color: #fafafa;
+   margin-bottom: 20px;
+  
+}
+.text-input {
+  background: transparent;
+  color: #fafafa;
+  width: 100%;
+  height: 25px;
+  margin:5px 0 20px 0;
+  border:1px solid #fafafa; 
+  border-radius: 2px;
+}
+
+.text-input:hover {
+  border-color:#f16c6b;
+}
+
+.join-button {
+  margin-top: 20px;
+  border-radius: 2px;
+  padding: 15px 32px 15px 32px;
+  text-align: center;
+  font-size: 100%;
+  background-color: #f16c6b;
+  color: #fafafa;
+  display: block;
+  
+}
+.join-button:hover {
+  background-color: #fafafa;
+  color: #f16c6b;
+}
+
+
+
+/*end form*/
+
+
+
+
+    /* REVISION needed for this part*/
+@media screen and (max-width: 1393px) {
+
+  #about-us {
+    width: 65%;
+    height: 1200px; /* for the tablet lenght */
+    margin: 0 auto;
+  }
+  #welcome {
+    padding: 30px 0;
+    margin-top: 0;
+  }
+
+  #right-ethos, #left-ethos {
+    width: 100%;
+    float: left;
+    padding: 0;
+
+  }
+  #center-ethos {
+    width: 100%;
+    float: left;
+    padding: 0;
+    clear: both;
+  }
+
+  #times div {
+    width: 100%;
+    height: 150%;
+    clear: both;
+    padding: 0;
+    border: solid;
+    border-bottom-color: #fff;
+    border-bottom-width: 1px;
+  
+  }
+
+  hr {
+    display: none;
+  }
+
+}
+
+
+
+@media screen and (max-width: 943px) {
+  #menu {
+    clear: left;
+    float: left;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    line-height: 25px;
+  }
+
+  #cover-text {
+      left: 0px;
+
+  }
+
+
+  #about-us{
+    width: 90%;
+    height: 1200px;
+    margin: 0 auto;
+  }
+
+  .left-about, .right-about {
+    width: inherit;
+  }
+  .left-about h2, .right-about h2 {
+    width: 100%;
+    text-align: center;
+  }
+  .left-about p, .right-about p {
+    text-align: center;
+    padding: 0 20px 0 20px;
+  }
+
+  #photo {
+    column-count: 3;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+
+  #photo {
+    column-count: 2;
+  }
+}
